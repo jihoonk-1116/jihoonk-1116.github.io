@@ -1,0 +1,31 @@
+
+
+/*
+This file is for displaying my answers of FreecCodeCamp basic node course
+Not for funning a server.
+*/
+{
+	"name": "fcc-learn-npm-package-json",
+	"author": "JihoonKim",
+	"description": "A project that does something awesome",
+	"keywords": [
+		"freecodecamp",
+		"descriptive",
+		"related",
+		"words"
+	],
+	"version": "1.2.0",
+	"license": "QueensCollge",
+	"dependencies": {
+		"express": "^4.14.0",
+        "moment" : "~2.10.2"
+	},
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://idontknow/todo.git"
+	}
+}
