@@ -1,0 +1,43 @@
+
+
+{
+	"name": "fcc-learn-npm-package-json",
+	"author": "JihoonKim",
+	"description": "A project that does something awesome",
+	"keywords": [
+		"freecodecamp",
+		"descriptive",
+		"related",
+		"words"
+	],
+	"version": "1.2.0",
+	"license": "QueensCollge",
+	"dependencies": {
+		"express": "^4.14.0",
+        "moment" : "~2.10.2"
+	},
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://idontknow/todo.git"
+	}
+}
+<!DOCTYPE html>
+<html>
+    <title>CS 355 Home Page</title>
+    <body>
+        <h1>This is my home page for CS355</h1>
+        <ul>
+            <li><a href="weather/weather.html">Weather app-1</a></li>
+            <li><a href="resume/myresume.html">Resume - on process </a></li>
+            <li><a href="CSS/index_css.html">CSS Practice</a></li>
+            <li><a href="js/index.html">JS Practice</a></li>
+            <li><a href="freecodecamp/index.html">FreeCodeCamp node course</a></li>
+            <li><a href="finalProject/index.html">Final Project</a></li>
+        </ul>
+        <p>Hosting by Chihoon Kim's Git</p>
+    </body>
+</html>
