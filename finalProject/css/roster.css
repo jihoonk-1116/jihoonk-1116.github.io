@@ -2,6 +2,9 @@ body{
     font-family: 'Montserrat', sans-serif;
     background-image: url("../img/annie-spratt-0ZPSX_mQ3xI-unsplash-m.jpg");
 }
+nav{
+    background-color:#e3f2fd
+}
 nav > a{
     font-weight: 600;
 }
