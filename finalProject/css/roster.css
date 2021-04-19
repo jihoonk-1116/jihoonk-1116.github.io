@@ -1,0 +1,20 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("img/annie-spratt-0ZPSX_mQ3xI-unsplash-m.jpg");
+}
+nav > a{
+    font-weight: 600;
+}
+section{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid lightskyblue;
+}
+.card-body h4{
+    color: whitesmoke;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.card{
+    background-color: skyblue;
+}

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <link href="css/roster.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script
+            src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+            crossorigin="anonymous"></script>
+    <title>Instructor Roster</title>
+</head>
+<body>
+<main>
+    <header class="container">
+        <h1 class="h1">Roster</h1>
+    </header>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light justify-content-around" style="background-color:#e3f2fd">
+            <a href="overview.html"><img src="img/logo.png" alt="logo" width="72" height="50"></a>
+            <a class="nav-link" aria-current="page" href="overview.html">Overview</a>
+            <a class="nav-link" aria-current="page" href="schedule.html">My Schedule</a>
+            <a class="nav-link" aria-current="page" href="roster.html">Roster</a>
+            <a class="nav-link" aria-current="page" href="index.html">Sign out</a>
+            <form>
+                <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+            </form>
+        </nav>
+    </div>
+    <section class="container">
+        <div>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h4>Class: Java, Section: CS211-24 </h4>
+                    <p>Mon 1:30-2:45, Tue 2:30-3:50</p>
+                </div>
+                <div class="card-footer d-flex align-items-center justify-content-between">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#stu-roster1">
+                        Show Roster
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="stu-roster1" tabindex="-1" aria-labelledby="rosterModalLabel1" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="rosterModalLabel1">Student Roster</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <table class="table table-striped custab">
+                                        <h4>Class: Java, Section: CS211-24 </h4>
+                                        <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Student#</th>
+                                            <th>Major</th>
+                                            <th>Email</th>
+                                            <th class="text-center">Options</th>
+                                        </tr>
+                                        </thead>
+                                        <tr>
+                                            <td>Jihoon Kim</td>
+                                            <td>2123421</td>
+                                            <td>Computer Science</td>
+                                            <td>Jihoonk-1116@gmail.com</td>
+                                            <td class="text-center">
+                                                <button type="button" class="btn btn-info btn-xs" data-bs-toggle="modal" data-bs-target="#details0">
+                                                    Details
+                                                </button>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="details0" tabindex="-1" aria-labelledby="detailsModalLabel0" aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="detailsModalLabel0">Student Details</h5>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <p>
+                                                                <ul class="stu-info">
+                                                                    <li>Student Name: Jihoon Kim</li>
+                                                                    <li>Email: Chihoon.kim27@qc.cuny.edu</li>
+                                                                    <li>Major: Computer Science</li>
+                                                                    <li>Phone Number: 123-143-1242</li>
+                                                                    <li>Address: 4431, Astoria, NY</li>
+                                                                    <li>Introduction: OOP programming</li>
+                                                                </ul>
+                                                                </p>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jihoon Kim</td>
+                                            <td>2123421</td>
+                                            <td>Computer Science</td>
+                                            <td>Jihoonk-1116@gmail.com</td>
+                                            <td class="text-center">
+                                                <a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Details</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jihoon Kim</td>
+                                            <td>2123421</td>
+                                            <td>Computer Science</td>
+                                            <td>Jihoonk-1116@gmail.com</td>
+                                            <td class="text-center">
+                                                <a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Details</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h4>Operating System, CS340-24</h4>
+                    <p>FRI 1:30-2:45, SUN 2:30-3:50</p>
+                </div>
+                <div class="card-footer d-flex align-items-center justify-content-between">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#stu-roster2">
+                        Show Roster
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="stu-roster2" tabindex="-1" aria-labelledby="rosterModalLabel2" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="rosterModalLabel2">Student Roster</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <table class="table table-striped custab">
+                                        <h4>Class: Operating System, CS340-24</h4>
+                                        <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Student#</th>
+                                            <th>Major</th>
+                                            <th>Email</th>
+                                            <th class="text-center">Options</th>
+                                        </tr>
+                                        </thead>
+                                        <tr>
+                                            <td>Jihoon Kim</td>
+                                            <td>2123421</td>
+                                            <td>Computer Science</td>
+                                            <td>Jihoonk-1116@gmail.com</td>
+                                            <td class="text-center">
+                                                <a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Details</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jihoon Kim</td>
+                                            <td>2123421</td>
+                                            <td>Computer Science</td>
+                                            <td>Jihoonk-1116@gmail.com</td>
+                                            <td class="text-center">
+                                                <a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Details</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jihoon Kim</td>
+                                            <td>2123421</td>
+                                            <td>Computer Science</td>
+                                            <td>Jihoonk-1116@gmail.com</td>
+                                            <td class="text-center">
+                                                <a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Details</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h4>Internet&Web tech, CS355-24 </h4>
+                    <p>Mon 4:30-6:45, Tue 4:30-6:45</p>
+                </div>
+                <div class="card-footer d-flex align-items-center justify-content-between">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#stu-roster3">
+                        Show Roster
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="stu-roster3" tabindex="-1" aria-labelledby="rosterModalLabel3" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="rosterModalLabel3">Student Roster</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <table class="table table-striped custab">
+                                        <h4>Class: Internet&Web Tech, CS355-24</h4>
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Student#</th>
+                                                <th>Major</th>
+                                                <th>Email</th>
+                                                <th class="text-center">Options</th>
+                                            </tr>
+                                        </thead>
+                                        <tr>
+                                            <td>Jihoon Kim</td>
+                                            <td>2123421</td>
+                                            <td>Computer Science</td>
+                                            <td>Jihoonk-1116@gmail.com</td>
+                                            <td class="text-center">
+                                                <a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Details</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jihoon Kim</td>
+                                            <td>2123421</td>
+                                            <td>Computer Science</td>
+                                            <td>Jihoonk-1116@gmail.com</td>
+                                            <td class="text-center">
+                                                <a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Details</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jihoon Kim</td>
+                                            <td>2123421</td>
+                                            <td>Computer Science</td>
+                                            <td>Jihoonk-1116@gmail.com</td>
+                                            <td class="text-center">
+                                                <a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Details</a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>
