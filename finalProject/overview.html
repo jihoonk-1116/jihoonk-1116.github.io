@@ -17,13 +17,13 @@
     </header>
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light justify-content-around">
-            <a href="overview.html"><img src="img/logo.png" alt="logo" width="72" height="50"></a>
+            <a href="overview.html"><img src="img/logo.png" alt="logo" width="72" height="50" id="logo"></a>
             <a class="nav-link" aria-current="page" href="overview.html">Overview</a>
             <a class="nav-link" aria-current="page" href="schedule.html">My Schedule</a>
             <a class="nav-link" aria-current="page" href="roster.html">Roster</a>
             <a class="nav-link" aria-current="page" href="index.html">Sign out</a>
             <form>
-                <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                <input id="searchbar" class="form-control" type="text" placeholder="Search" aria-label="Search">
             </form>
         </nav>
     </div>
@@ -177,16 +177,9 @@
                                         </p>
                                         <p>
                                             <label for="section">Class Code: </label>
-                                            <input id="section" class="form-control" type="text" name="section">
+                                            <input id="code" class="form-control" type="text" name="code">
                                         </p>
                                         <p id="sem-cap">
-                                            <label for="semester">Semester: </label>
-                                            <select id="semester" name="semester">
-                                                <option value="spring">Spring</option>
-                                                <option value="fall">Fall</option>
-                                            </select>
-                                            <label for="capacity">Capacity: </label>
-                                            <input class="form-control-sm" id="capacity" type="number" name="capacity" width="120px">
                                             <label for="dep">Department: </label>
                                             <select id="dep" name="dep">
                                                 <option value="CSCI">CSCI</option>
@@ -195,6 +188,13 @@
                                                 <option value="ECON">ECON</option>
                                                 <option value="PHY">PHYS</option>
                                             </select>
+                                            <label for="semester">Semester: </label>
+                                            <select id="semester" name="semester">
+                                                <option value="spring">Spring</option>
+                                                <option value="fall">Fall</option>
+                                            </select>
+                                            <label for="capacity">Capacity: </label>
+                                            <input class="form-control-sm" id="capacity" type="number" name="capacity">
                                         </p>
                                         <p class="d-flex gap-sm-3">
                                             <label for="deadline">Enrollment Deadline: </label>
@@ -296,7 +296,7 @@
                                 </button>
                                 <!-- Modal -->
                                 <div class="modal fade" id="details0" tabindex="-1" aria-labelledby="detailsModalLabel0" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
                                         <div class="modal-content">
                                             <div class="modal-header">
                                                 <h5 class="modal-title" id="detailsModalLabel0">Class Details</h5>
