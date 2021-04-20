@@ -110,3 +110,89 @@ nav > a{
 .class-info{
     text-align: left;
 }
+
+@media screen and (min-width: 771px){ /*tablet*/
+
+}
+@media screen and (max-width: 770px){ /*tablet*/
+    .profile-img{
+        margin-left: -20px;
+    }
+    .modal-body{
+        font-size: 15px;
+    }
+    .form-control, .form-control-sm{
+        height: 85%;
+    }
+    #capacity{
+        width: 50px;
+        height: 17px;
+    }
+    #semester{
+        margin-right: 10px;
+    }
+    .table{
+        font-size: 13px;
+    }
+    .btn{
+        font-size: 13px;
+    }
+
+
+}
+@media screen and (max-width: 360px){
+    body{
+        font-size: 13px;
+    }
+    #logo{
+        width: 40px;
+        height: 30px;
+    }
+    .nav-link{
+        padding: 0px;
+    }
+    #searchbar{
+        width: 130%;
+        font-size: 11px;
+        margin: 5px 5px 0px 0px;
+    }
+    nav{
+        font-size: 12px;
+    }
+    .profile-img{
+        height: 85%;
+        width: 75%;
+    }
+    .btn{
+        font-size: 9px;
+    }
+    .btn-info, .btn-danger{
+        margin: 0px 0px 4px 0px;
+    }
+    .profile-edit-btn{
+        width: 20%;
+        height: 90%;
+        margin-bottom: 2px;
+    }
+    .table{
+        font-size: 9px;
+    }
+    .modal-body, .modal-body input, .modal-body textarea{
+        font-size: 11px;
+    }
+    .form-control, .form-control-sm{
+        height: 85%;
+    }
+    #capacity{
+        width: 50px;
+        height: 10px;
+    }
+    #sem-cap{
+        gap: 5px;
+    }
+    #deadline{
+        width: 150px;
+        height: 30px;
+        margin-left: 5px;
+    }
+}
