@@ -111,9 +111,7 @@ nav > a{
     text-align: left;
 }
 
-@media screen and (max-width: 992px){ /*tablet*/
 
-}
 @media screen and (max-width: 991px){ /*tablet*/
 
     .profile-img{
@@ -142,7 +140,6 @@ nav > a{
 
 }
 @media screen and (max-width: 530px){
-
     body{
         font-size: 13px;
     }
@@ -155,11 +152,11 @@ nav > a{
     }
     #searchbar{
         width: 100%;
-        font-size: 11px;
-        margin: 5px 5px 0px 0px;
+        font-size: 10px;
+        margin: 0px 5px 0px 0px;
     }
     nav{
-        font-size: 12px;
+        font-size: 10px;
     }
     .profile-img{
         height: 85%;
@@ -167,6 +164,7 @@ nav > a{
     }
     .btn{
         font-size: 9px;
+        padding: 1px 1px 1px 1px;
     }
     .btn-info, .btn-danger{
         margin: 0px 0px 4px 0px;
@@ -174,7 +172,7 @@ nav > a{
     .profile-edit-btn{
         width: 20%;
         height: 90%;
-        margin-bottom: 2px;
+        margin-bottom: 5px;
     }
     .table{
         font-size: 9px;
@@ -201,8 +199,4 @@ nav > a{
         margin: 0px 2px 0px 2px;
         width: 25%;
     }
-    .btn{
-        padding: 1px 1px 1px 1px;
-    }
-
 }

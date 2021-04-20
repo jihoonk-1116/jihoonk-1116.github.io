@@ -5,7 +5,7 @@ body {
     display: flex;
     align-items: center;
     padding-bottom: 60px;
-    background-image: url("../img/jj-ying-7JX0-bfiuxQ-unsplash-m.jpg");
+    background-image: url("../img/jj-ying-7JX0-bfiuxQ-unsplash-l.jpg");
 }
 form{
     font:12pt Arial;
@@ -33,4 +33,19 @@ h1{
 }
 #radios{
     margin-top: 10px;
+}
+
+@media screen and (max-width: 991px){ /*tablet*/
+    body{
+        background-image: url("../img/jj-ying-7JX0-bfiuxQ-unsplash-m.jpg");
+    }
+
+}
+@media screen and (max-width: 530px){
+    body{
+        background-image: url("../img/jj-ying-7JX0-bfiuxQ-unsplash-sm.jpg");
+    }
+    img{
+        margin-top: 250px;
+    }
 }

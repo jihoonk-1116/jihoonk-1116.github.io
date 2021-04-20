@@ -1,5 +1,5 @@
 body{
-    background-image: url("../img/jj-ying-7JX0-bfiuxQ-unsplash-m.jpg");
+    background-image: url("../img/jj-ying-7JX0-bfiuxQ-unsplash-l.jpg");
     font-family: 'Montserrat', sans-serif;
     height: 100vh;
 }
@@ -21,4 +21,20 @@ img{
 }
 .form-floating{
     padding-bottom: 5px;
+}
+@media screen and (max-width: 991px){ /*tablet*/
+    body{
+        background-image: url("../img/jj-ying-7JX0-bfiuxQ-unsplash-m.jpg");
+    }
+    form{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 530px){
+    body{
+        background-image: url("../img/jj-ying-7JX0-bfiuxQ-unsplash-sm.jpg");
+    }
+    img{
+        margin-top: 20px;
+    }
 }
