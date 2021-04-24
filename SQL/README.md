@@ -1,7 +1,7 @@
 # SQL Problems
-# Zybook
 ## Q1
 ![image](https://user-images.githubusercontent.com/76544061/115945401-a7587880-a489-11eb-9188-f8e23b2af96e.png)
+From Zybook
 
 ### SQL)
 select sub.Employee, Employee.FirstName as Manager from(
@@ -14,6 +14,7 @@ select sub.Employee, Employee.FirstName as Manager from(
 
 ## Q2
 ![image](https://user-images.githubusercontent.com/76544061/115945497-1f26a300-a48a-11eb-9481-1bdc2995da38.png)
+From Zybook
 
 ### SQL
 select Movie.Title, Movie.Year, Rating.Description from Movie left outer join Rating on Movie.Ratingcode = Rating.code;
