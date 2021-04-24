@@ -21,23 +21,22 @@ select Movie.Title, Movie.Year, Rating.Description from Movie left outer join Ra
 
 ### Results
 ![image](https://user-images.githubusercontent.com/76544061/115945538-41202580-a48a-11eb-94d6-4c461210780e.png)
-![image](https://user-images.githubusercontent.com/76544061/115945546-454c4300-a48a-11eb-9d44-3147177b9a31.png)
  
 ## Q3
-<img width="990" alt="Screen Shot 2021-04-24 at 3 49 37 PM" src="https://user-images.githubusercontent.com/76544061/115971128-b46e7980-a514-11eb-9916-48ce3f394485.png">
+<img width="600" alt="Screen Shot 2021-04-24 at 3 49 37 PM" src="https://user-images.githubusercontent.com/76544061/115971128-b46e7980-a514-11eb-9916-48ce3f394485.png">
 From Zybook 
 
 ### SQL
-Select sub.LessonDateTime ,HorseId, sub.FirstName, sub.LastName from (
-   select HorseID, Student.FirstName, Student.LastName, LessonDateTime from LessonSchedule 
-   inner join Student on LessonSchedule.StudentID = Student.ID
+Select sub.LessonDateTime ,HorseId, sub.FirstName, sub.LastName from ( <br> 
+   select HorseID, Student.FirstName, Student.LastName, LessonDateTime from LessonSchedule <br>
+   inner join Student on LessonSchedule.StudentID = Student.ID <br>
 )sub inner join Horse on sub.HorseID = Horse.ID order by sub.LessonDateTime, HorseID;
 
 ### Results
-<img width="405" alt="Screen Shot 2021-04-24 at 3 50 48 PM" src="https://user-images.githubusercontent.com/76544061/115971170-dbc54680-a514-11eb-963a-c2feaa7fb7e6.png">
+<img width="400" alt="Screen Shot 2021-04-24 at 3 50 48 PM" src="https://user-images.githubusercontent.com/76544061/115971170-dbc54680-a514-11eb-963a-c2feaa7fb7e6.png">
 
 ## Q4
-<img width="949" alt="Screen Shot 2021-04-24 at 4 34 55 PM" src="https://user-images.githubusercontent.com/76544061/115972223-0ca87a00-a51b-11eb-904e-7b35dede2ec1.png">
+<img width="600" alt="Screen Shot 2021-04-24 at 4 34 55 PM" src="https://user-images.githubusercontent.com/76544061/115972223-0ca87a00-a51b-11eb-904e-7b35dede2ec1.png">
 From Zybook
 
 ### SQL
@@ -48,4 +47,4 @@ where LessonDateTime >= "2020-02-01 00:00:00" and LessonDateTime < "2020-02-02 0
 order by LessonSchedule.LessonDateTime, Horse.RegisteredName asc
 
 ### Results
-<img width="405" alt="Screen Shot 2021-04-24 at 4 36 08 PM" src="https://user-images.githubusercontent.com/76544061/115972243-3661a100-a51b-11eb-9eeb-776a22226a2f.png">
+<img width="350" alt="Screen Shot 2021-04-24 at 4 36 08 PM" src="https://user-images.githubusercontent.com/76544061/115972243-3661a100-a51b-11eb-9eeb-776a22226a2f.png">
