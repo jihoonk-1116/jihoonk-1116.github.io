@@ -48,3 +48,29 @@ order by LessonSchedule.LessonDateTime, Horse.RegisteredName asc
 
 ### Results
 <img width="350" alt="Screen Shot 2021-04-24 at 4 36 08 PM" src="https://user-images.githubusercontent.com/76544061/115972243-3661a100-a51b-11eb-9eeb-776a22226a2f.png">
+
+## Q5
+![image](https://user-images.githubusercontent.com/76544061/115979632-046d3080-a555-11eb-9665-aec28518d4b1.png)
+
+### SQL
+ALTER TABLE Movie DROP COLUMN Genre;
+ALTER TABLE Movie CHANGE COLUMN Year ReleaseYear SMALLINT;
+ALTER TABLE Movie ADD Producer VARCHAR(50);
+
+### Result
+![image](https://user-images.githubusercontent.com/76544061/115979668-3088b180-a555-11eb-98eb-13300692619e.png)
+
+## Q6
+![image](https://user-images.githubusercontent.com/76544061/115979927-c7a23900-a556-11eb-8e47-68160bad27eb.png)
+
+### SQL
+CREATE TABLE LessonSchedule (
+	HorseID        SMALLINT UNSIGNED NOT NULL,
+	StudentID      SMALLINT UNSIGNED,
+	LessonDateTime DATETIME NOT NULL,
+	PRIMARY KEY(HorseID, LessonDateTime),
+   FOREIGN KEY(HorseID) REFERENCES Horse(ID) ON DELETE CASCADE,
+   FOREIGN KEY(StudentID) REFERENCES Student(ID) ON DELETE SET NULL
+);
+### Results
+![image](https://user-images.githubusercontent.com/76544061/115979939-e0aaea00-a556-11eb-8732-fc6699321b32.png)
