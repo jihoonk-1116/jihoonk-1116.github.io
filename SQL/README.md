@@ -8,7 +8,7 @@ select sub.Employee, Employee.FirstName as Manager from(
    select e1.FirstName as Employee, e1.ManagerID from Employee as e1 inner join Employee as e2 on e1.ManagerID = e2.ID
 )sub inner join Employee on sub.ManagerID = Employee.ID order by sub.Employee; 
 
-### Results
+### Result
 ![image](https://user-images.githubusercontent.com/76544061/115945432-d242cc80-a489-11eb-9252-57f34e2aa5af.png)
 ![image](https://user-images.githubusercontent.com/76544061/115945438-d7a01700-a489-11eb-86e1-bdfa65ffa202.png)
 
@@ -19,7 +19,7 @@ From Zybook
 ### SQL
 select Movie.Title, Movie.Year, Rating.Description from Movie left outer join Rating on Movie.Ratingcode = Rating.code;
 
-### Results
+### Result
 ![image](https://user-images.githubusercontent.com/76544061/115945538-41202580-a48a-11eb-94d6-4c461210780e.png)
  
 ## Q3
@@ -32,7 +32,7 @@ Select sub.LessonDateTime ,HorseId, sub.FirstName, sub.LastName from ( <br>
    inner join Student on LessonSchedule.StudentID = Student.ID <br>
 )sub inner join Horse on sub.HorseID = Horse.ID order by sub.LessonDateTime, HorseID;
 
-### Results
+### Result
 <img width="400" alt="Screen Shot 2021-04-24 at 3 50 48 PM" src="https://user-images.githubusercontent.com/76544061/115971170-dbc54680-a514-11eb-963a-c2feaa7fb7e6.png">
 
 ## Q4
@@ -46,7 +46,7 @@ left outer join Student on LessonSchedule.StudentId = Student.ID
 where LessonDateTime >= "2020-02-01 00:00:00" and LessonDateTime < "2020-02-02 00:00:00"
 order by LessonSchedule.LessonDateTime, Horse.RegisteredName asc
 
-### Results
+### Result
 <img width="350" alt="Screen Shot 2021-04-24 at 4 36 08 PM" src="https://user-images.githubusercontent.com/76544061/115972243-3661a100-a51b-11eb-9eeb-776a22226a2f.png">
 
 ## Q5
@@ -72,5 +72,28 @@ CREATE TABLE LessonSchedule (
    FOREIGN KEY(HorseID) REFERENCES Horse(ID) ON DELETE CASCADE,
    FOREIGN KEY(StudentID) REFERENCES Student(ID) ON DELETE SET NULL
 );
-### Results
+### Result
 ![image](https://user-images.githubusercontent.com/76544061/115979939-e0aaea00-a556-11eb-8732-fc6699321b32.png)
+
+## Q7
+![image](https://user-images.githubusercontent.com/76544061/115980722-d2f86300-a55c-11eb-9f1b-ad0562374159.png)
+
+### SQL
+CREATE TABLE Horse (
+	ID        SMALLINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+	RegisteredName   VARCHAR(15) NOT NULL,
+	Breed VARCHAR(20) ,
+	Height DECIMAL(3,1),
+	BirthDate DATE,
+	CONSTRAINT Height
+      CHECK (Height BETWEEN 10.0 and 20.0),
+   CONSTRAINT BirthDate
+      CHECK (BirthDate >= '2015-01-01'),
+   CONSTRAINT Breed
+      CHECK (Breed IN ('Egyptian Arab', 'Holsteiner', 'Quarter Horse', 'Paint', 'Saddlebred'))
+);
+
+### Result
+![image](https://user-images.githubusercontent.com/76544061/115980734-eefc0480-a55c-11eb-92f9-88b0a7f15fcb.png)
+
+### SQL
