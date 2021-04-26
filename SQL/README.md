@@ -96,4 +96,22 @@ CREATE TABLE Horse (
 ### Result
 ![image](https://user-images.githubusercontent.com/76544061/115980734-eefc0480-a55c-11eb-92f9-88b0a7f15fcb.png)
 
+### Q8
+![image](https://user-images.githubusercontent.com/76544061/116029353-220aca80-a627-11eb-9bbb-fa6d56364eba.png)
+
 ### SQL
+CREATE TABLE Student (
+	ID        SMALLINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+	FirstName VARCHAR(20) NOT NULL,
+	LastName VARCHAR(30)  NOT NULL,
+	Street VARCHAR(50)   NOT NULL,
+	City  VARCHAR(20) NOT NULL,
+	State CHAR(2) NOT NULL DEFAULT 'TX',
+	Zip   MEDIUMINT UNSIGNED NOT NULL,
+	Phone CHAR(10) NOT NULL,
+	Email VARCHAR(30) UNIQUE
+);
+
+### Result
+![image](https://user-images.githubusercontent.com/76544061/116029399-3f3f9900-a627-11eb-83bf-03a17053029a.png)
+
