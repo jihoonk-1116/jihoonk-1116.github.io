@@ -52,3 +52,21 @@ var findPeopleByName = function(personName, done) {
     return done(null, data);
     })
 };
+/*
+6
+*/
+var findOneByFood = function(food, done) {
+  Person.findOne({favoriteFoods: food}, function(err, data) {
+    console.log(data);
+    if(err) return done(err);
+    return done(null, data)
+  })
+  
+};
+/*
+7
+*/
+
+var findPersonById = (personId, done) => {
+  Person.findById(personId, (err, data) => err ? done(err) : done(null, data)); 
+};
