@@ -60,3 +60,15 @@ body {
 .custom-map-control-button:hover {
   background: #ebebeb;
 }
+footer {
+  background: #343434;
+  color: #f7fff7;
+}
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+}
+.contact-list a {
+  padding: 15px;
+  display: inline-block;
+}
