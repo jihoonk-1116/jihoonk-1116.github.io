@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chihoon Kim's Resume</title>
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/resume.css">
+  </head>
+  <body>
+    <main>
+        <nav class="navbar navbar-wide navbar-dark bg-dark" aria-label="First navbar example">
+            <div class="container-fluid">
+              <h5 class="h5">
+                MY RESUME
+              </h5>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarsExample01">
+                <ul class="navbar-nav me-auto text-center">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Dashboard
+                    </a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="exercise.html">Coding Exercises
+                    </a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="resume.html">Resume</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+      <!-- ***************  ABOUT / PROFILE  **************** -->
+      <header>
+        <div class="content-wrap">
+          <h1>Chihoon Kim</h1>
+          <h2>Software Engineer & Devlover</h2>
+        </div>
+      </header>
+
+      <!-- ************ PROJECTS / PORTFOLIO  ************** -->
+      <section class="projects">
+        <div class="content-wrap divider">
+          <h2>Featured Projects</h2>
+          <p>View selected projects below. Source code can be found at <a href="https://github.com/jihoonk-1116">my Github</a>.</p>
+
+          <!-- Project 1 -->
+          <section class="project-item">
+            <img src="../img/qcfirst.png" alt="qcfirst" height="250px" >
+            <h3>Online class platform - In progress</h3>
+            <p>Fullstack developing from front-end to back-end with HTML, CSS, JavaScript, Nodejs, jQuery, Database, Express.
+              The webpage supports user sign-up, user authentication, course management, enrollment management.
+            </p>
+            <a class="btn" href="https://github.com/jihoonk-1116/qcfirst" target="_blank">Github</a>
+            <a class="btn" href="https://qcfirst-1.jihoonk1116.repl.co/index.html" target="_blank">Live App</a>
+          </section>
+
+          <!-- Project 2 -->
+          <section class="project-item">
+            <img src="../img/RR.png" alt="Round-Robin Scheduling" height="200px">
+            <h3>Round-Robin Scheduling</h3>
+            <p>
+              In the Operating System course, I implemented non-preemptive and preemptive scheduling depending 
+              on processes' priority using the C language's structure. I also implemented Singly-LinkedList 
+              data structure that finds an element's proper position to keep their priority when they are inserted into it
+              without calling sort method.
+            </p>
+            <a class="btn" href="https://github.com/jihoonk-1116/Operating-System/blob/main/RoundRobin-scheduler/KChihoon_schd.c" target="_blank">Source Code</a>
+          </section>
+
+          <section class="project-item">
+            <img src="../img/mul.png" alt="multi-thread" height="230px">
+            <h3>Multi-Threads Calculator</h3>
+            <p>
+              In the Operating System course, implementation of Multi-Threads Calculator was assigned using C language's pthread() and fork().
+              The project required generating maximum of 50 children and 50 grandchildren to sum a huge number (ex, summation from 1 to 10000000).
+              I could understand how multiple threads are managed and what the purpose is to use a number of threads
+            </p>
+            <a class="btn" href="https://github.com/jihoonk-1116/Operating-System/blob/main/Multithread-calculator/KChihoon_thd.c" target="_blank">Source Code</a>
+          </section>
+
+          <!-- Project 4 -->
+          <section class="project-item">
+            <img src="../img/top-down.png" alt="top-down parser">
+            <h3>Top-Down Parser</h3>
+            <p>
+              In the Principle of Programming Language class, I implemented Lexical Analyzer and Top-down Parser using Java. I utilized LinkedList and HashMap Java collections.
+              Above 50 classes were required to implement this project including abstact classes and thier children. I could learn how programming languages parse and understand
+              user inputs and calculate them. 
+            </p>
+            <a class="btn" href="https://github.com/jihoonk-1116/Programming_Language/tree/main/Top_down_parser/bin/cs316project" target="_blank">Source Code</a>
+          </section>
+        </div>
+    </section>
+      <!-- *************  EDUCATION & CERTIFICATIONS *********** -->
+      <section class="education contact">
+        <div class="content-wrap item-details">
+          <div class="work">
+            <h2>WORK EXPERIENCE</h2>
+            <section class="item project-item">
+              <img src="../img/rok.png">
+              <h3>Republic of Korea Army - First Lieutenant</h3>
+              <p>Experience of Platoon Leader & Company Commander</p>
+            </section>
+          </div>
+          <h2>EDUCATION & CERTIFICATIONS</h2>
+          <section class="item project-item">
+            <img src="../img/qc.png">
+            <h3>Queens College - Queens, NY</h3>
+            <p>Bachelor of Arts with Computer Science, 2017-2021</p>
+          </section>
+          <section class="item project-item">
+            <img src="../img/aws.png">
+            <h3>AWS Associate Developer</h3>
+            <p>Certificate for AWS Cloud Computing , 2021</p>
+          </section>
+          <section class="item project-item">
+            <img src="../img/sku.png">
+            <h3>SeoKyung University - Seoul, South Korea</h3>
+            <p>Bachelor of Science with Electronic Engineering, 2010-2014</p>
+          </section>
+
+          <section class="item project-item">
+            <img src="../img/rotc.png">
+            <h3>ROTC Training</h3>
+            <p>2 years studying Military Science and Training </p>
+          </section>
+        </div>
+      </section>
+
+      <!-- ************  CONTACT INFO / SOCIAL MEDIA  ************ -->
+      <footer>
+        <div class="content-wrap">
+          <h2>Contact Me!</h2>
+          <!-- Social media and contact links. Add or remove any networks. -->
+          <ul class="contact-list">
+            <li><a href="mailto:jihoonk1116@gmail.com">jihoonk1116@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/chihoon-kim-7262b1205/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/jihoonk-1116" target="_blank">Git</a></li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
