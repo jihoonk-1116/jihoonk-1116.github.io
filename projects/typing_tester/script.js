@@ -4,11 +4,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     const originText = document.querySelector("#origin-text p").innerHTML;
     const resetButton = document.querySelector("#reset");
     const theTimer = document.querySelector(".timer");
-    
-    // Event listeners for keyboard input and the reset
-    testArea.addEventListener("keypress", start, false);
-    testArea.addEventListener("keyup", spellCheck, false);
-    resetButton.addEventListener("click", reset, false);
 });
 
 
@@ -75,4 +70,7 @@ function reset() {
     testWrapper.style.borderColor = "grey";
 }
 
-
+// Event listeners for keyboard input and the reset
+testArea.addEventListener("keypress", start, false);
+testArea.addEventListener("keyup", spellCheck, false);
+resetButton.addEventListener("click", reset, false);
