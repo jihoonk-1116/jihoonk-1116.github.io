@@ -1,10 +1,16 @@
-const testWrapper = document.querySelector(".test-wrapper");
-const testArea = document.querySelector("#test-area");
-if( document.querySelector("#origin-text p") != null){
+document.addEventListener("DOMContentLoaded", function(event) { 
+    const testWrapper = document.querySelector(".test-wrapper");
+    const testArea = document.querySelector("#test-area");
     const originText = document.querySelector("#origin-text p").innerHTML;
-}
-const resetButton = document.querySelector("#reset");
-const theTimer = document.querySelector(".timer");
+    const resetButton = document.querySelector("#reset");
+    const theTimer = document.querySelector(".timer");
+    
+    // Event listeners for keyboard input and the reset
+    testArea.addEventListener("keypress", start, false);
+    testArea.addEventListener("keyup", spellCheck, false);
+    resetButton.addEventListener("click", reset, false);
+});
+
 
 var timer = [0,0,0,0];
 var interval;
@@ -69,7 +75,4 @@ function reset() {
     testWrapper.style.borderColor = "grey";
 }
 
-// Event listeners for keyboard input and the reset
-testArea.addEventListener("keypress", start, false);
-testArea.addEventListener("keyup", spellCheck, false);
-resetButton.addEventListener("click", reset, false);
+
