@@ -39,18 +39,22 @@ class Solution {
 **->Too expensive**
 
 **Suggested Solution: Two-Pass HashTable (by LeetCode)**
+The suggested solution uses Hashmap to reduce searching time. 
+ 
+
 ```
     class Solution {
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();  //Initialize Hashmap
         for (int i = 0; i < nums.length; i++) {
-            map.put(nums[i], i);          **//Put an element as key and its index as value**
+            map.put(nums[i], i);          //Put an element as key and its index as value
         }
         for (int i = 0; i < nums.length; i++) {
             int complement = target - nums[i];
-            **//if complement is equal to an element in the array, it means that the element and nums[i] is answer.**
+             
             if (map.containsKey(complement) && map.get(complement) != i) {   
-               **//Fast look up using containsKey() method to find equal value, and it should not be itself.**
+                 //if complement is equal to an element in the array, it means that the element and nums[i] is answer.
+               //Fast look up using containsKey() method to find equal value as key, and it should not be itself.
                 return new int[] { i, map.get(complement) }; //return as integer array
             }
         }
