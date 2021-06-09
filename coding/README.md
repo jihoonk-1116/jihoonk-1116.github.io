@@ -22,7 +22,7 @@ For brute force answer, using two For loops can successfully return the answer.
 
 **Brute force**
 
-class Solution {
+`class Solution {
     public int[] twoSum(int[] nums, int target) {
         for(int i=0;i<nums.length;i++){         //first index
             for(int j=i+1;j<nums.length;j++){   //second index
@@ -34,14 +34,14 @@ class Solution {
         }
         return null; //if there is no the two numbers, return null
     }
-}
+}`
 
 **Complexity: O(n^2) , Space Complexity: O(1)**
 **->Too expensive**
 
 **Suggested Solution: Two-Pass HashTable (by LeetCode)**
 
-class Solution {
+`class Solution {
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();  //Initialize Hashmap
         for (int i = 0; i < nums.length; i++) {
@@ -57,7 +57,7 @@ class Solution {
         }
         throw new IllegalArgumentException("No two sum solution");
     }
-}
+}`
 
-
+**Complexity: O(n) = Traverse the list(O(n)) + look up time (O(1)) , Space Complexity: O(n)**
 
