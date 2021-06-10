@@ -69,9 +69,9 @@ The suggested solution uses Hashmap to reduce searching time.
 <a href = "https://leetcode.com/problems/3sum/"> [Link] </a>
 
 #### Description
-Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] 
-such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
-Notice that the solution set must not contain duplicate triplets.
+Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] <br>
+such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0. <br>
+Notice that the solution set must not contain duplicate triplets. <br>
 
 ![image](https://user-images.githubusercontent.com/76544061/121587159-7b299480-ca02-11eb-9c25-4d4603555cce.png)
 
